@@ -1,0 +1,86 @@
+/* Основные стили для всего документа */
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f0f4f8;
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+h1 {
+	font-size: 36px;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+/* Контейнер для центрирования */
+.container {
+	text-align: center;
+	background-color: white;
+	padding: 30px 50px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 12px;
+}
+
+/* Таймер с большими цифрами */
+#timer {
+	font-size: 60px;
+	font-weight: bold;
+	color: #2c3e50;
+	margin-bottom: 20px;
+	letter-spacing: 2px;
+	padding: 10px 0;
+}
+
+/* Контейнер для кнопок */
+.button-container {
+	display: flex;
+	justify-content: center;
+}
+
+/* Базовый стиль для кнопок */
+.btn {
+	font-size: 18px;
+	padding: 15px 30px;
+	margin: 0 10px;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	color: white;
+	transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Стартовая кнопка */
+.start {
+	background-color: #2ecc71;
+}
+
+.start:hover {
+	background-color: #27ae60;
+}
+
+/* Стоп кнопка */
+.stop {
+	background-color: #e74c3c;
+}
+
+.stop:hover {
+	background-color: #c0392b;
+}
+
+/* Кнопка сброса */
+.reset {
+	background-color: #f39c12;
+}
+
+.reset:hover {
+	background-color: #e67e22;
+}
+
+/* Анимация нажатия на кнопки */
+.btn:active {
+	transform: scale(0.95);
+}
