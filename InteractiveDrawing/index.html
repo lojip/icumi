@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Интерактивный Графический Редактор</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+		<h1>Интерактивный Графический Редактор</h1>
+		<div class="toolbox">
+			<div class="toolbox-item">
+				<label for="color">Цвет:</label>
+				<input type="color" id="color" value="#000000">
+				<div id="colorDisplay"></div>
+			</div>
+			<div class="toolbox-item">
+				<label for="thickness">Толщина:</label>
+				<input type="range" id="thickness" min="1" max="10" value="2">
+			</div>
+			<div class="toolbox-item">
+				<button id="clear" type="button">Очистить</button>
+				<button id="undo" type="button">Отменить</button>
+			</div>
+		</div>
+		<canvas id="drawingCanvas"></canvas>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>

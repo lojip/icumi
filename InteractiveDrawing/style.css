@@ -1,0 +1,112 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: #e9ecef;
+	padding: 20px;
+	/* Добавляем отступы для мобильных устройств */
+}
+
+.container {
+	text-align: center;
+	background: #ffffff;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	width: 100%;
+	/* Ширина 100% для адаптивности */
+	max-width: 800px;
+	/* Максимальная ширина контейнера */
+}
+
+h1 {
+	margin-bottom: 20px;
+	font-size: 24px;
+	color: #333;
+}
+
+.toolbox {
+	margin-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	/* Позволяет элементам переноситься на новую строку */
+	justify-content: center;
+	align-items: center;
+	background: #f8f9fa;
+	border-radius: 5px;
+	padding: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.toolbox-item {
+	margin: 0 15px;
+	display: flex;
+	align-items: center;
+}
+
+canvas {
+	border: 1px solid #333;
+	background-color: #ffffff;
+	cursor: crosshair;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s ease;
+	width: 100%;
+	/* Ширина 100% для адаптивности */
+	height: auto;
+	/* Авто высота */
+	max-width: 800px;
+	/* Максимальная ширина холста */
+	max-height: 600px;
+	/* Максимальная высота холста */
+}
+
+
+button {
+	padding: 10px 15px;
+	margin: 0 5px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #007bff;
+	/* Цвет кнопок */
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+	background-color: #0056b3;
+	/* Более темный цвет при наведении */
+	transform: translateY(-2px);
+	/* Небольшое поднятие при наведении */
+}
+
+button:active {
+	transform: translateY(0);
+	/* Возврат в исходное положение при нажатии */
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 600px) {
+	h1 {
+		font-size: 20px;
+		/* Уменьшаем размер заголовка */
+	}
+
+	button {
+		font-size: 14px;
+		/* Уменьшаем размер шрифта кнопок */
+		padding: 8px 12px;
+		/* Уменьшаем отступы кнопок */
+	}
+}
