@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Конструктор Квизов</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="quiz-container">
+		<h1>Конструктор Квизов</h1>
+
+		<div class="question-form">
+			<textarea id="question" placeholder="Введите вопрос"></textarea>
+
+			<div class="options">
+				<label>
+					<input type="radio" name="correct" value="1">
+				</label>
+				<input type="text" id="option1" placeholder="Введите вариант ответа 1" />
+			</div>
+
+			<div class="options">
+				<label>
+					<input type="radio" name="correct" value="2">
+				</label>
+				<input type="text" id="option2" placeholder="Введите вариант ответа 2" />
+			</div>
+
+			<div class="options">
+				<label>
+					<input type="radio" name="correct" value="3">
+				</label>
+				<input type="text" id="option3" placeholder="Введите вариант ответа 3" />
+			</div>
+
+			<div class="options">
+				<label>
+					<input type="radio" name="correct" value="4">
+				</label>
+				<input type="text" id="option4" placeholder="Введите вариант ответа 4" />
+			</div>
+
+			<button onclick="addQuestion()" type="button">Добавить вопрос</button>
+		</div>
+		<div id="quiz" style="display: none;"></div>
+		<button onclick="startQuiz()" type="button">Начать квиз</button>
+		<button onclick="calculateResult()" type="button">Подсчитать результат</button>
+		<button onclick="restartQuiz()" type="button" style="display: none;">Начать заново</button>
+		<div id="result"></div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
