@@ -27,3 +27,16 @@ document.getElementById('addTaskButton').addEventListener('click', function() {
         alert('Введите задачу!');
     }
 });
+
+
+let num = 20;
+
+for (let i = 0; i <= num; i += 2) {
+    console.log(i);
+};
+
+let i = 1;
+while (i <= num) {
+    console.log(i);
+    i += 2;
+};
